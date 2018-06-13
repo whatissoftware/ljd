@@ -129,6 +129,11 @@ def _read_instructions(parser, prototype):
 		if not instruction:
 			return False
 
+		#print ("inst：%s" % instruction.name)
+		#print ("%x" % instruction.opcode)
+		#print ("%x" % instruction.A)
+		#print ("%x" % instruction.B)
+		#print ("%x" % instruction.CD)
 		prototype.instructions.append(instruction)
 
 		i += 1
